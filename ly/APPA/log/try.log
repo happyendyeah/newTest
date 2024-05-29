@@ -1,0 +1,19 @@
+nohup: ignoring input
+训练集: 946
+测试集: 237
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/root/miniconda3/envs/evapatch/lib/python3.6/site-packages/transformers/optimization.py:309: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  FutureWarning,
+-------------- start training --------------- 
+
+========= epoch: 0 ==============
+tensor([899, 849, 813, 366, 518, 845, 311, 451, 193, 390, 444, 345, 636, 705,
+        580, 195, 792, 804, 356, 523, 876, 272,  48, 834])
+Traceback (most recent call last):
+  File "./src/train.py", line 242, in <module>
+    max_epoch=max_epoch, start_epoch=start_epoch, data_id=str(i))
+  File "./src/train.py", line 145, in train
+    print(1/0)
+ZeroDivisionError: division by zero
