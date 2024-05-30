@@ -1,5 +1,5 @@
 import numpy as np
-from transformers import AutoTokenizer, AdamW
+from transformers import AutoTokenizer, AdamW, get_linear_schedule_with_warmup
 from torch.utils.data import DataLoader
 import torch
 import os
@@ -84,7 +84,7 @@ def save(model, optimizer, PATH, index):
     os.makedirs(PATH)
     # 保存模型参数
     torch.save({
-        'model_state_dict': model.module.state_dict(),
+        'model_state_dict': model.state_dict(),
         'optimizer_state_dict': optimizer.state_dict()
     }, os.path.join(PATH, 'checkpoint' + str(index)))
     print("保存模型参数")
@@ -92,7 +92,7 @@ def save(model, optimizer, PATH, index):
 
 def load(model, PATH, index):
     checkpoint = torch.load(os.path.join(PATH, 'checkpoint' + str(index)))
-    model.module.load_state_dict(checkpoint['model_state_dict'])
+    model.load_state_dict(checkpoint['model_state_dict'])
     print("从checkpoint" + str(index) + "加载模型成功")
     return model
 
@@ -124,9 +124,9 @@ def evl(model, test_loader):
     return acc
 
 
-def train(model, train_loader, test_loader, optim, loss_function, max_epoch, start_epoch, data_id):
+def train(model, train_loader, test_loader, optim, scheduler, loss_function, max_epoch, start_epoch, data_id):
     max_acc = 0
-    print('-------------- start training ---------------', '\n')
+    print(f'-------------- start training {data_id} ---------------', '\n')
     for epoch in tqdm(range(max_epoch)):
         # 从start_epoch开始
         if epoch < start_epoch:
@@ -151,12 +151,13 @@ def train(model, train_loader, test_loader, optim, loss_function, max_epoch, sta
             # loss = loss_function(out, labels.float())
             loss = out
 
-            print('[', step, '/', len(train_loader), ']', "loss:", format(loss.item(), '.3f'))
+            print('[', step, '/', len(train_loader), ']', "loss:", format(loss.item(), '.3f'), "lr:", optim.param_groups[0]['lr'])
             losses.append(loss.item())
 
             # 反向传播
             loss.backward()
             optim.step()
+            scheduler.step()  # 更新学习率
         # 输出本次epoch的loss均值
         print(np.mean(losses))
         # test(model,test_loader,device=config.device)
@@ -170,7 +171,7 @@ def train(model, train_loader, test_loader, optim, loss_function, max_epoch, sta
         #         max_acc = acc
         #         save(model, optim, config.model_save_path + "_" + data_id, epoch)
         if epoch % 1 == 0:
-            save(model, optim, config.model_save_path + "_" + data_id, epoch)
+            save(model, optim, config.model_save_path, epoch)
 
 
 if __name__ == '__main__':
@@ -235,9 +236,12 @@ if __name__ == '__main__':
         optim = AdamW(model.parameters(), lr=5e-5)
         # 损失函数
         loss_function = torch.nn.BCEWithLogitsLoss()
+        num_train_steps = len(train_loader) * max_epoch
+        num_warmup_steps = int(num_train_steps * 0.1) 
+        scheduler = get_linear_schedule_with_warmup(optim, num_warmup_steps=num_warmup_steps, num_training_steps=num_train_steps)
         
         # 开始训练
-        train(model=model, train_loader=train_loader, test_loader=test_loader, optim=optim, loss_function=loss_function,
+        train(model=model, train_loader=train_loader, test_loader=test_loader, optim=optim, scheduler=scheduler, loss_function=loss_function,
               max_epoch=max_epoch, start_epoch=start_epoch, data_id=str(i))
 
 
