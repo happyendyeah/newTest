@@ -14,6 +14,7 @@ import pandas as pd
 from sklearn.model_selection import KFold, StratifiedKFold
 from sklearn.metrics import roc_curve, auc, accuracy_score, recall_score, precision_score
 from tqdm import tqdm
+import sys
 
 
 def tokenizer_head_tail(text, tokenizer, max_length):
@@ -79,9 +80,9 @@ def tokenizer_mid(text, tokenizer, max_legnth):
 
 def save(model, optimizer, PATH, index):
     # 先删除文件夹，再新建文件夹，可以起到清空的作用
-    if os.path.exists(PATH):
-        shutil.rmtree(PATH)
-    os.makedirs(PATH)
+    # if os.path.exists(PATH):
+    #     shutil.rmtree(PATH)
+    # os.makedirs(PATH)
     # 保存模型参数
     torch.save({
         'model_state_dict': model.state_dict(),
@@ -126,7 +127,7 @@ def evl(model, test_loader):
 
 def train(model, train_loader, test_loader, optim, scheduler, loss_function, max_epoch, start_epoch, data_id):
     max_acc = 0
-    print(f'-------------- start training {data_id} ---------------', '\n')
+    print('-------------- start training ---------------', '\n')
     for epoch in tqdm(range(max_epoch)):
         # 从start_epoch开始
         if epoch < start_epoch:
@@ -150,8 +151,15 @@ def train(model, train_loader, test_loader, optim, scheduler, loss_function, max
             out = model(input_ids_1, attention_mask_1, input_ids_2, attention_mask_2)
             # loss = loss_function(out, labels.float())
             loss = out
-
-            print('[', step, '/', len(train_loader), ']', "loss:", format(loss.item(), '.3f'), "lr:", optim.param_groups[0]['lr'])
+            
+            # print("loss:")
+            # print(loss.shape)
+            loss = torch.mean(loss)
+            # print("loss_update:")
+            # print(loss.shape)
+            if step % 100 == 0:
+                print('[', step, '/', len(train_loader), ']', "loss:", format(loss.item(), '.3f'), "lr:", optim.param_groups[0]['lr'])
+                sys.stdout.flush()
             losses.append(loss.item())
 
             # 反向传播
