@@ -1,0 +1,6 @@
+*.pyc
+*.class
+/.project
+/.classpath
+/config
+/bin/
