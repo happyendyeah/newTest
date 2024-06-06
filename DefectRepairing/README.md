@@ -52,7 +52,7 @@ entries in file hhc after remove PatchSim: 2146
 repeat content:('k = 1 . 0 / k ; tmp = mu + k * sigma ; if ( tmp < upper ) { upper = ( ( int ) Math . ceil ( tmp ) ) - 1 ; } }', 'k = 1 . 0 / k ; tmp = mu + k * sigma ; if ( tmp < upper ) { tmp = mu + ( k * sigma ) ; } }', 0)
 ```
 
-跑了三组实验：
+跑了四组实验：
 1. 使用ly之前的数据new2000T构成的2147条数据为训练集，patch_sim的130条数据为测试集，在CL预训练基础上进行训练，结果如下：
    
    `Accuracy: 0.876923 -- Precision: 0.750000 -- Recall: 0.642857 -- F1: 0.692308 -- AUC: 0.931723`
