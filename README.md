@@ -45,6 +45,29 @@ number: 9
 Accuracy: 0.421634 -- Precision: 0.447500 -- Recall: 0.813636 -- F1: 0.577419 -- AUC: 0.405072
 ```
 
+/efs_data/sy/newTest-main/newTest-main/ly/APPA/dataset/Patch_Sim/deduplicated_patch_sim_new.pkl
+```
+Accuracy: 0.530769 -- Precision: 0.759494 -- Recall: 0.588235 -- F1: 0.662983 -- AUC: 0.511555
+number: 1
+Accuracy: 0.407692 -- Precision: 0.711864 -- Recall: 0.411765 -- F1: 0.521739 -- AUC: 0.403711
+number: 2
+Accuracy: 0.507692 -- Precision: 0.880000 -- Recall: 0.431373 -- F1: 0.578947 -- AUC: 0.647059
+number: 3
+Accuracy: 0.223077 -- Precision: 0.666667 -- Recall: 0.019608 -- F1: 0.038095 -- AUC: 0.429622
+number: 4
+Accuracy: 0.230769 -- Precision: 1.000000 -- Recall: 0.019608 -- F1: 0.038462 -- AUC: 0.533964
+number: 5
+Accuracy: 0.523077 -- Precision: 0.884615 -- Recall: 0.450980 -- F1: 0.597403 -- AUC: 0.675070
+number: 6
+Accuracy: 0.315385 -- Precision: 0.666667 -- Recall: 0.254902 -- F1: 0.368794 -- AUC: 0.350490
+number: 7
+Accuracy: 0.223077 -- Precision: 0.666667 -- Recall: 0.019608 -- F1: 0.038095 -- AUC: 0.445728
+number: 8
+Accuracy: 0.500000 -- Precision: 0.893617 -- Recall: 0.411765 -- F1: 0.563758 -- AUC: 0.643908
+number: 9
+Accuracy: 0.730769 -- Precision: 0.781513 -- Recall: 0.911765 -- F1: 0.841629 -- AUC: 0.496148
+```
+
 use number 8:
 ```
 dataset/New2000T:
