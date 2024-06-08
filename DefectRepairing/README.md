@@ -85,6 +85,16 @@ hhc给的这个2147数据没有进行去重，去重之后，以及山区与patc
 
 现在在跑的实验：
 1. 2277数据集不做DACL跑patchsim测试集
+
+   `Accuracy: 0.938462 -- Precision: 0.777778 -- Recall: 1.000000 -- F1: 0.875000 -- AUC: 0.962535`
+   
 2. 2277数据集做DACL跑patchsim测试集
-3. 2146数据集做DACL跑patchsim测试集
+
+   ` `
+
+3. 2146数据集不做DACL跑patchsim测试集
+
+   ``
+   
+4. 2146数据集做DACL跑patchsim测试集
 
