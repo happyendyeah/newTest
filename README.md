@@ -1,24 +1,25 @@
-/efs_data/sy/newTest-main/newTest-main/ly/CL_pretrain/dataset/data_test_0.pkl
+/efs_data/sy/compass/dataset/2274_ori.jsonl
 ```
-Accuracy: 0.511936 -- Precision: 0.549550 -- Recall: 0.843318 -- F1: 0.665455 -- AUC: 0.481653
-number: 1
-Accuracy: 0.583554 -- Precision: 0.717391 -- Recall: 0.456221 -- F1: 0.557746 -- AUC: 0.642454
-number: 2
-Accuracy: 0.445623 -- Precision: 0.514925 -- Recall: 0.635945 -- F1: 0.569072 -- AUC: 0.338220
-number: 3
-Accuracy: 0.413793 -- Precision: 0.491870 -- Recall: 0.557604 -- F1: 0.522678 -- AUC: 0.338825
-number: 4
-Accuracy: 0.366048 -- Precision: 0.270833 -- Recall: 0.059908 -- F1: 0.098113 -- AUC: 0.351728
-number: 5
-Accuracy: 0.578249 -- Precision: 0.605072 -- Recall: 0.769585 -- F1: 0.677485 -- AUC: 0.603255
-number: 6
-Accuracy: 0.535809 -- Precision: 0.562500 -- Recall: 0.870968 -- F1: 0.683544 -- AUC: 0.353139
-number: 7
-Accuracy: 0.424403 -- Precision: 0.500000 -- Recall: 0.585253 -- F1: 0.539278 -- AUC: 0.311377
-number: 8
-Accuracy: 0.564987 -- Precision: 0.609959 -- Recall: 0.677419 -- F1: 0.641921 -- AUC: 0.572753
-number: 9
-Accuracy: 0.427056 -- Precision: 0.545455 -- Recall: 0.027650 -- F1: 0.052632 -- AUC: 0.645853
+checkpoint0
+Accuracy: 0.590589 -- Precision: 0.594745 -- Recall: 0.639008 -- F1: 0.616082 -- AUC: 0.644427
+checkpoint1
+Accuracy: 0.523747 -- Precision: 0.521182 -- Recall: 0.905047 -- F1: 0.661457 -- AUC: 0.549995
+checkpoint2
+Accuracy: 0.551891 -- Precision: 0.540628 -- Recall: 0.853721 -- F1: 0.662023 -- AUC: 0.577913
+checkpoint3
+Accuracy: 0.568602 -- Precision: 0.577049 -- Recall: 0.602224 -- F1: 0.589368 -- AUC: 0.586709
+checkpoint4
+Accuracy: 0.486368 -- Precision: 1.000000 -- Recall: 0.000855 -- F1: 0.001709 -- AUC: 0.487103
+checkpoint5
+Accuracy: 0.507916 -- Precision: 0.640449 -- Recall: 0.097519 -- F1: 0.169265 -- AUC: 0.564083
+checkpoint6
+Accuracy: 0.436236 -- Precision: 0.423752 -- Recall: 0.268606 -- F1: 0.328796 -- AUC: 0.426817
+checkpoint7
+Accuracy: 0.440633 -- Precision: 0.400387 -- Recall: 0.177074 -- F1: 0.245552 -- AUC: 0.398519
+checkpoint8
+Accuracy: 0.515391 -- Precision: 0.574279 -- Recall: 0.221557 -- F1: 0.319753 -- AUC: 0.558922
+checkpoint9
+Accuracy: 0.474494 -- Precision: 0.492754 -- Recall: 0.756202 -- F1: 0.596693 -- AUC: 0.433500
 ```
 
 /efs_data/sy/newTest-main/newTest-main/ly/APPA/dataset/New2000T
