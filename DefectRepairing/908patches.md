@@ -8,7 +8,7 @@ Accuracy: 0.897727 -- Precision: 0.898551 -- Recall: 0.968750 -- F1: 0.932331 --
 
 2. fold 2
 
-Accuracy: 0.795455 -- Precision: 0.821918 -- Recall: 0.923077 -- F1: 0.869565 -- AUC: 0.738462
+Accuracy: 0.863636 -- Precision: 0.907692 -- Recall: 0.907692 -- F1: 0.907692 -- AUC: 0.858863
 
 3. fold 3
 
