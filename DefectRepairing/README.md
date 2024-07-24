@@ -97,6 +97,6 @@ hhc给的这个2147数据没有进行去重，去重之后，以及山区与patc
 
    `Accuracy: 0.892308 -- Precision: 0.733333 -- Recall: 0.785714 -- F1: 0.758621 -- AUC: 0.931022`
 
-4. 2274数据集做DACL跑patchsim测试集（只保留Chart，Lang，Math，Time，并删去DA中规则0增强的结果，共6272条数据）
+4. 2274数据集做DACL跑patchsim测试集（只保留Chart，Lang，Math，Time，并删去DA中规则0增强的数据，共6272条数据）
 
    `Accuracy: 0.884615 -- Precision: 0.948454 -- Recall: 0.901961 -- F1: 0.924623 -- AUC: 0.942227`
