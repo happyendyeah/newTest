@@ -11,6 +11,23 @@ Proportions for Fix Tokens:
 ```
 可以看出小于512的数据只有不到50%，所以可能存在较差的结果。
 
+### codebert train
+#### epoch=50, lr=1e-5, bs=16
+```
+Average of Best Results Across Folds:
+{
+    "Accuracy": 83.13,
+    "Precision": 82.22,
+    "Recall": 83.57,
+    "F1": 82.85,
+    "AUC": 86.89
+}
+Best Epoch:39 | Accuracy:83.33%, Precision:81.74%, Recall:84.68%, F1:83.19%, AUC:86.92%
+Best Epoch:44 | Accuracy:84.65%, Precision:86.19%, Recall:81.53%, F1:83.8%, AUC:88.27%
+Best Epoch:11 | Accuracy:80.66%, Precision:79.3%, Recall:81.45%, F1:80.36%, AUC:83.93%
+Best Epoch:20 | Accuracy:85.71%, Precision:85.45%, Recall:85.07%, F1:85.26%, AUC:90.3%
+Best Epoch:36 | Accuracy:81.32%, Precision:78.42%, Recall:85.14%, F1:81.64%, AUC:85.02%
+```
 
 ### transformer_train
 #### epoch=50, lr=5e-4
@@ -47,5 +64,17 @@ Best Epoch:44 | Accuracy:77.8%, Precision:74.3%, Recall:83.33%, F1:78.56%, AUC:8
 ```
 #### epoch=100, lr=5e-5
 ```
-
+Average of Best Results Across Folds:
+{
+    "Accuracy": 80.28,
+    "Precision": 76.68,
+    "Recall": 86.01,
+    "F1": 80.99,
+    "AUC": 86.51
+}
+Best Epoch:86 | Accuracy:80.26%, Precision:76.61%, Recall:85.59%, F1:80.85%, AUC:87.89%
+Best Epoch:58 | Accuracy:79.82%, Precision:75.39%, Recall:86.94%, F1:80.75%, AUC:86.04%
+Best Epoch:72 | Accuracy:84.84%, Precision:84.55%, Recall:84.16%, F1:84.35%, AUC:90.56%
+Best Epoch:95 | Accuracy:78.02%, Precision:73.54%, Recall:85.52%, F1:79.08%, AUC:83.74%
+Best Epoch:91 | Accuracy:78.46%, Precision:73.31%, Recall:87.84%, F1:79.92%, AUC:84.32%
 ```
