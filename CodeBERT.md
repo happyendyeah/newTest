@@ -4,6 +4,8 @@
 All：所有epoch中的最优结果
 ES：early stop=2之后的最优结果
 
+parameters: lr=5e-5, bs=32.
+
 ### 结论
 1. 几乎所有的ckpt上ES的accuracy都比All的低两个点左右
 2. All在ckpt0上取得最优结果，accu达到0.8733
