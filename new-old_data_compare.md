@@ -38,7 +38,22 @@ Average Early Metrics: {'accuracy': 0.8672, 'precision': 0.8588, 'recall': 0.869
 
 #### new_data-DA
 ```
+Best Epoch Results:
+Round 1 - Best Epoch 28 : {'accuracy': 0.8879, 'precision': 0.8615, 'recall': 0.9128, 'f1': 0.8864, 'auc': 0.9187}
+Round 2 - Best Epoch 18 : {'accuracy': 0.8813, 'precision': 0.8681, 'recall': 0.8987, 'f1': 0.8831, 'auc': 0.9247}
+Round 3 - Best Epoch 15 : {'accuracy': 0.8901, 'precision': 0.8898, 'recall': 0.8974, 'f1': 0.8936, 'auc': 0.9433}
+Round 4 - Best Epoch 28 : {'accuracy': 0.8747, 'precision': 0.8689, 'recall': 0.8565, 'f1': 0.8627, 'auc': 0.9194}
+Round 5 - Best Epoch 40 : {'accuracy': 0.8656, 'precision': 0.8545, 'recall': 0.8664, 'f1': 0.8604, 'auc': 0.9101}
 
+Early Stop Epoch Results:
+Round 1 - Early Epoch 1 : {'accuracy': 0.8659, 'precision': 0.8428, 'recall': 0.8853, 'f1': 0.8635, 'auc': 0.9262}
+Round 2 - Early Epoch 7 : {'accuracy': 0.8813, 'precision': 0.8712, 'recall': 0.8943, 'f1': 0.8826, 'auc': 0.9279}
+Round 3 - Early Epoch 6 : {'accuracy': 0.8769, 'precision': 0.8938, 'recall': 0.8632, 'f1': 0.8783, 'auc': 0.9289}
+Round 4 - Early Epoch 5 : {'accuracy': 0.8593, 'precision': 0.8607, 'recall': 0.8278, 'f1': 0.8439, 'auc': 0.923}
+Round 5 - Early Epoch 1 : {'accuracy': 0.8326, 'precision': 0.8161, 'recall': 0.8387, 'f1': 0.8273, 'auc': 0.9043}
+
+Average Best Metrics: {'accuracy': 0.8799, 'precision': 0.8686, 'recall': 0.8864, 'f1': 0.8772, 'auc': 0.9232}
+Average Early Metrics: {'accuracy': 0.8632, 'precision': 0.8569, 'recall': 0.8619, 'f1': 0.8591, 'auc': 0.9221}
 ```
 
 #### new_data-CL
@@ -64,23 +79,21 @@ Average Early Metrics: {'accuracy': 0.8522, 'precision': 0.8491, 'recall': 0.846
 #### new_data-ori(codebert_ori_bs64)
 ```
 Best Epoch Results:
-Round 0 - Best Epoch 9 : {'accuracy': 0.8945, 'precision': 0.8728, 'recall': 0.9128, 'f1': 0.8924, 'auc': 0.9422}
 Round 1 - Best Epoch 23 : {'accuracy': 0.9033, 'precision': 0.875, 'recall': 0.9312, 'f1': 0.9022, 'auc': 0.9368}
 Round 2 - Best Epoch 20 : {'accuracy': 0.8923, 'precision': 0.8973, 'recall': 0.8855, 'f1': 0.8914, 'auc': 0.919}
 Round 3 - Best Epoch 23 : {'accuracy': 0.8857, 'precision': 0.9027, 'recall': 0.8718, 'f1': 0.887, 'auc': 0.9372}
 Round 4 - Best Epoch 36 : {'accuracy': 0.8703, 'precision': 0.8947, 'recall': 0.8134, 'f1': 0.8521, 'auc': 0.9299}
-Round 5 - Best Epoch 47 : {'accuracy': 0.8568, 'precision': 0.8393, 'recall': 0.8664, 'f1': 0.8526, 'auc': 0.9149}
+Round 5 - Best Epoch 6 : {'accuracy': 0.859, 'precision': 0.8341, 'recall': 0.8802, 'f1': 0.8565, 'auc': 0.9183}
 
 Early Stop Epoch Results:
-Round 0 - Early Epoch 9 : {'accuracy': 0.8945, 'precision': 0.8728, 'recall': 0.9128, 'f1': 0.8924, 'auc': 0.9422}
-Round 1 - Early Epoch 12 : {'accuracy': 0.9011, 'precision': 0.8879, 'recall': 0.9083, 'f1': 0.898, 'auc': 0.9283}
+Round 1 - Early Epoch 9 : {'accuracy': 0.8945, 'precision': 0.8728, 'recall': 0.9128, 'f1': 0.8924, 'auc': 0.9422}
 Round 2 - Early Epoch 10 : {'accuracy': 0.8813, 'precision': 0.8712, 'recall': 0.8943, 'f1': 0.8826, 'auc': 0.9241}
 Round 3 - Early Epoch 10 : {'accuracy': 0.8857, 'precision': 0.8824, 'recall': 0.8974, 'f1': 0.8898, 'auc': 0.9351}
-Round 4 - Early Epoch 15 : {'accuracy': 0.8703, 'precision': 0.875, 'recall': 0.8373, 'f1': 0.8557, 'auc': 0.939}
-Round 5 - Early Epoch 13 : {'accuracy': 0.8458, 'precision': 0.8326, 'recall': 0.8479, 'f1': 0.8402, 'auc': 0.9112}
+Round 4 - Early Epoch 8 : {'accuracy': 0.8659, 'precision': 0.8854, 'recall': 0.8134, 'f1': 0.8479, 'auc': 0.9295}
+Round 5 - Early Epoch 6 : {'accuracy': 0.859, 'precision': 0.8341, 'recall': 0.8802, 'f1': 0.8565, 'auc': 0.9183}
 
-Average Best Metrics: {'accuracy': 0.8838, 'precision': 0.8803, 'recall': 0.8802, 'f1': 0.8796, 'auc': 0.93}
-Average Early Metrics: {'accuracy': 0.8798, 'precision': 0.8703, 'recall': 0.883, 'f1': 0.8765, 'auc': 0.93}
+Average Best Metrics: {'accuracy': 0.8821, 'precision': 0.8808, 'recall': 0.8764, 'f1': 0.8778, 'auc': 0.9282}
+Average Early Metrics: {'accuracy': 0.8773, 'precision': 0.8692, 'recall': 0.8796, 'f1': 0.8738, 'auc': 0.9298}
 ```
 
 #### old_data-DACL
@@ -106,23 +119,21 @@ Average Early Metrics: {'accuracy': 0.866, 'precision': 0.8514, 'recall': 0.8764
 #### old_data-DA
 ```
 Best Epoch Results:
-Round 0 - Best Epoch 4 : {'accuracy': 0.8742, 'precision': 0.8382, 'recall': 0.9182, 'f1': 0.8764, 'auc': 0.9294}
 Round 1 - Best Epoch 15 : {'accuracy': 0.8896, 'precision': 0.8795, 'recall': 0.8955, 'f1': 0.8874, 'auc': 0.9218}
 Round 2 - Best Epoch 28 : {'accuracy': 0.8852, 'precision': 0.8925, 'recall': 0.8682, 'f1': 0.8802, 'auc': 0.932}
 Round 3 - Best Epoch 14 : {'accuracy': 0.8967, 'precision': 0.8718, 'recall': 0.9231, 'f1': 0.8967, 'auc': 0.9451}
-Round 4 - Best Epoch 5 : {'accuracy': 0.8962, 'precision': 0.8909, 'recall': 0.895, 'f1': 0.8929, 'auc': 0.9453}
+Round 4 - Best Epoch 13 : {'accuracy': 0.8634, 'precision': 0.8762, 'recall': 0.8364, 'f1': 0.8558, 'auc': 0.906}
 Round 5 - Best Epoch 20 : {'accuracy': 0.8962, 'precision': 0.8839, 'recall': 0.9041, 'f1': 0.8939, 'auc': 0.9463}
 
 Early Stop Epoch Results:
-Round 0 - Early Epoch 4 : {'accuracy': 0.8742, 'precision': 0.8382, 'recall': 0.9182, 'f1': 0.8764, 'auc': 0.9294}
-Round 1 - Early Epoch 12 : {'accuracy': 0.8742, 'precision': 0.8721, 'recall': 0.8682, 'f1': 0.8702, 'auc': 0.91}
-Round 2 - Early Epoch 10 : {'accuracy': 0.8852, 'precision': 0.8962, 'recall': 0.8636, 'f1': 0.8796, 'auc': 0.928}
-Round 3 - Early Epoch 11 : {'accuracy': 0.8835, 'precision': 0.8559, 'recall': 0.914, 'f1': 0.884, 'auc': 0.9405}
-Round 4 - Early Epoch 13 : {'accuracy': 0.8634, 'precision': 0.8762, 'recall': 0.8364, 'f1': 0.8558, 'auc': 0.906}
-Round 5 - Early Epoch 10 : {'accuracy': 0.8852, 'precision': 0.8884, 'recall': 0.8721, 'f1': 0.8802, 'auc': 0.9509}
+Round 1 - Early Epoch 4 : {'accuracy': 0.8742, 'precision': 0.8382, 'recall': 0.9182, 'f1': 0.8764, 'auc': 0.9294}
+Round 2 - Early Epoch 5 : {'accuracy': 0.8698, 'precision': 0.8815, 'recall': 0.8455, 'f1': 0.8631, 'auc': 0.9265}
+Round 3 - Early Epoch 2 : {'accuracy': 0.8681, 'precision': 0.8546, 'recall': 0.8778, 'f1': 0.8661, 'auc': 0.9433}
+Round 4 - Early Epoch 5 : {'accuracy': 0.8502, 'precision': 0.8654, 'recall': 0.8182, 'f1': 0.8411, 'auc': 0.9183}
+Round 5 - Early Epoch 5 : {'accuracy': 0.8962, 'precision': 0.8909, 'recall': 0.895, 'f1': 0.8929, 'auc': 0.9453}
 
-Average Best Metrics: {'accuracy': 0.8897, 'precision': 0.8761, 'recall': 0.9007, 'f1': 0.8879, 'auc': 0.9367}
-Average Early Metrics: {'accuracy': 0.8776, 'precision': 0.8712, 'recall': 0.8788, 'f1': 0.8744, 'auc': 0.9275}
+Average Best Metrics: {'accuracy': 0.8862, 'precision': 0.8808, 'recall': 0.8855, 'f1': 0.8828, 'auc': 0.9302}
+Average Early Metrics: {'accuracy': 0.8717, 'precision': 0.8661, 'recall': 0.8709, 'f1': 0.8679, 'auc': 0.9326}
 ```
 
 #### old_data-CL
@@ -148,23 +159,21 @@ Average Early Metrics: {'accuracy': 0.8563, 'precision': 0.8343, 'recall': 0.881
 #### old_data-ori
 ```
 Best Epoch Results:
-Round 0 - Best Epoch 5 : {'accuracy': 0.8786, 'precision': 0.8541, 'recall': 0.9045, 'f1': 0.8786, 'auc': 0.9353}
 Round 1 - Best Epoch 32 : {'accuracy': 0.8962, 'precision': 0.8879, 'recall': 0.9, 'f1': 0.8939, 'auc': 0.9311}
-Round 2 - Best Epoch 8 : {'accuracy': 0.8813, 'precision': 0.8523, 'recall': 0.914, 'f1': 0.8821, 'auc': 0.9379}
+Round 2 - Best Epoch 29 : {'accuracy': 0.8631, 'precision': 0.8762, 'recall': 0.8364, 'f1': 0.8558, 'auc': 0.9136}
 Round 3 - Best Epoch 49 : {'accuracy': 0.8923, 'precision': 0.8909, 'recall': 0.8869, 'f1': 0.8889, 'auc': 0.9293}
-Round 4 - Best Epoch 9 : {'accuracy': 0.8874, 'precision': 0.8684, 'recall': 0.9041, 'f1': 0.8859, 'auc': 0.9401}
+Round 4 - Best Epoch 17 : {'accuracy': 0.8634, 'precision': 0.8911, 'recall': 0.8182, 'f1': 0.8531, 'auc': 0.9227}
 Round 5 - Best Epoch 39 : {'accuracy': 0.8962, 'precision': 0.8981, 'recall': 0.8858, 'f1': 0.892, 'auc': 0.9525}
 
 Early Stop Epoch Results:
-Round 0 - Early Epoch 5 : {'accuracy': 0.8786, 'precision': 0.8541, 'recall': 0.9045, 'f1': 0.8786, 'auc': 0.9353}
-Round 1 - Early Epoch 17 : {'accuracy': 0.8918, 'precision': 0.8701, 'recall': 0.9136, 'f1': 0.8914, 'auc': 0.9246}
-Round 2 - Early Epoch 10 : {'accuracy': 0.8631, 'precision': 0.8911, 'recall': 0.8182, 'f1': 0.8531, 'auc': 0.9158}
-Round 3 - Early Epoch 18 : {'accuracy': 0.8813, 'precision': 0.8778, 'recall': 0.8778, 'f1': 0.8778, 'auc': 0.9297}
-Round 4 - Early Epoch 10 : {'accuracy': 0.8502, 'precision': 0.8619, 'recall': 0.8227, 'f1': 0.8419, 'auc': 0.9293}
-Round 5 - Early Epoch 10 : {'accuracy': 0.894, 'precision': 0.88, 'recall': 0.9041, 'f1': 0.8919, 'auc': 0.9454}
+Round 1 - Early Epoch 5 : {'accuracy': 0.8786, 'precision': 0.8541, 'recall': 0.9045, 'f1': 0.8786, 'auc': 0.9353}
+Round 2 - Early Epoch 4 : {'accuracy': 0.8587, 'precision': 0.8861, 'recall': 0.8136, 'f1': 0.8483, 'auc': 0.9236}
+Round 3 - Early Epoch 8 : {'accuracy': 0.8813, 'precision': 0.8523, 'recall': 0.914, 'f1': 0.8821, 'auc': 0.9379}
+Round 4 - Early Epoch 4 : {'accuracy': 0.8524, 'precision': 0.84, 'recall': 0.8591, 'f1': 0.8494, 'auc': 0.923}
+Round 5 - Early Epoch 5 : {'accuracy': 0.883, 'precision': 0.864, 'recall': 0.8995, 'f1': 0.8814, 'auc': 0.945}
 
-Average Best Metrics: {'accuracy': 0.8887, 'precision': 0.8753, 'recall': 0.8992, 'f1': 0.8869, 'auc': 0.9377}
-Average Early Metrics: {'accuracy': 0.8765, 'precision': 0.8725, 'recall': 0.8735, 'f1': 0.8725, 'auc': 0.93}
+Average Best Metrics: {'accuracy': 0.8822, 'precision': 0.8888, 'recall': 0.8655, 'f1': 0.8767, 'auc': 0.9298}
+Average Early Metrics: {'accuracy': 0.8708, 'precision': 0.8593, 'recall': 0.8781, 'f1': 0.868, 'auc': 0.933}
 ```
 
 
